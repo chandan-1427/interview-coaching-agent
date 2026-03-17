@@ -8,13 +8,13 @@ import re
 from pathlib import Path
 from typing import Any, TypedDict
 
-from bindu.penguin.bindufy import bindufy
+from bindu.penguin.bindufy import bindufy  # type: ignore[import-untyped]
 from dotenv import load_dotenv
 from exa_py import Exa
 from langchain_core.messages import HumanMessage, SystemMessage
 from langchain_openai import ChatOpenAI
 from langgraph.graph import END, StateGraph
-from mem0 import MemoryClient
+from mem0 import MemoryClient  # type: ignore[import-untyped]
 
 # Load environment variables
 load_dotenv()
