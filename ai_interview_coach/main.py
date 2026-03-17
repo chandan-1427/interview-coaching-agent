@@ -232,7 +232,7 @@ async def initialize_all(env: dict[str, str] | None = None) -> None:
 async def run_agent(messages: list[dict[str, str]]) -> Any:
     """Execute the graph with Memory and Search integration."""
     user_input = messages[-1].get("content", "").strip()
-    
+
     # TODO: Replace with dynamic user ID from authentication context
     user_id = "bindu_candidate_default"
 
