@@ -1,0 +1,52 @@
+site_name: ai-interview-coach
+repo_url: https://github.com/chandan-1427/ai-interview-coach
+site_url: https://chandan-1427.github.io/ai-interview-coach
+site_description: A versatile AI that helps candidates excel in technical interviews by simulating conversational responses that reflect depth of knowledge, real-world experience, and thoughtful alternative approaches.
+site_author: rahul
+edit_uri: edit/main/docs/
+repo_name: chandan-1427/ai-interview-coach
+copyright: Maintained by <a href="https://chandan-1427.com">chandan-1427</a>.
+
+nav:
+  - Home: index.md
+  - Modules: modules.md
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: ["src/ai_interview_coach"]
+theme:
+  name: material
+  feature:
+    tabs: true
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: white
+      accent: deep orange
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: deep orange
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  icon:
+    repo: fontawesome/brands/github
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/chandan-1427/ai-interview-coach
+    - icon: fontawesome/brands/python
+      link: https://pypi.org/project/ai-interview-coach
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true

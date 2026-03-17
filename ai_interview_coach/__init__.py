@@ -1,0 +1,27 @@
+# |---------------------------------------------------------|
+# |                                                         |
+# |                 Give Feedback / Get Help                |
+# | https://github.com/getbindu/Bindu/issues/new/choose    |
+# |                                                         |
+# |---------------------------------------------------------|
+#
+#  Thank you users! We ❤️ you! - 🌻
+
+"""ai-interview-coach - An Bindu Agent.
+"""
+
+from ai_interview_coach.__version__ import __version__
+from ai_interview_coach.main import (
+    handler,
+    run_agent,
+    initialize_all,
+    main,
+)
+
+__all__ = [
+    "__version__",
+    "handler",
+    "run_agent",
+    "initialize_all",
+    "main",
+]

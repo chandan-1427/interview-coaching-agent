@@ -1,0 +1,50 @@
+{
+  "author": "chandandakka@gmail.com",
+  "name": "ai-interview-coach",
+  "description": "An intelligent AI career coach designed to help technical candidates master interview narratives. It simulates professional responses that demonstrate deep technical expertise, real-world problem-solving, and architectural trade-off analysis. By providing concise, 30-second conversational scripts, it helps users articulate complex concepts, share impactful evidence from past experiences, and discuss alternative approaches with the confidence of a lead engineer.",
+  "version": "1.0.0",
+  "recreate_keys": false,
+  "skills": [],
+  "capabilities": {},
+  "agent_trust": "low",
+  "debug_mode": true,
+  "debug_level": 2,
+  "deployment": {
+    "url": "http://0.0.0.0:3773",
+    "expose": true,
+    "protocol_version": "1.0.0",
+    "proxy_urls": [
+      "0.0.0.0"
+    ],
+    "cors_origins": [
+      "*"
+    ]
+  },
+  "num_history_sessions": 5,
+  "extra_metadata": {
+    "domain": "engineering",
+    "specialization": "career_coaching"
+  },
+  "environment_variables": [
+    {
+      "key": "OPENROUTER_API_KEY",
+      "description": "OpenRouter API key for LLM calls",
+      "required": true
+    },
+    {
+      "key": "MODEL_NAME",
+      "description": "The specific LLM model ID (e.g., anthropic/claude-3-haiku)",
+      "required": false
+    },
+    {
+      "key": "EXA_API_KEY",
+      "description": "Exa API key for real-world case study research",
+      "required": false
+    },
+    {
+      "key": "MEM0_API_KEY",
+      "description": "Mem0 API key for persistent cross-session user memory",
+      "required": false
+    }
+  ]
+}
